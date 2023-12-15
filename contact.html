@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="StyleContact.css">
+    </head>
+    <body>
+        <div>
+            <h1>Contact Us</h1>
+            <h3>We're looking forward to hearing from you.</h3>
+        </div>
+        <form>
+            <table style="width:100%">
+                <tr>
+            <th><p style="font-size: 25px;text-align: left;" >First Name<input type="text" name="First Name" size="30" maxlength="30" required="required"/></p></th>
+            <th><p style="font-size: 25px;text-align: center;">Middle Name<input type="text" name="Middle Name" size="30" maxlength="30"/></p></th>
+            <th><p style="font-size: 25px;text-align: right;">Last Name<input type="text" name="Last Name" size="30" maxlength="30"required="required"/></p></th>
+                </tr>
+                <tr>
+                    <th><p style="font-size: 25px;text-align: left;">Email<input type="text" name="Email" size="50" maxlength="100"required="required"/></p></th>
+                </tr>
+                <tr>
+                    <th><p style="font-size: 25px;text-align: left;">Phone<input type="text" name="Phone" size="30" maxlength="12"required="required"/></p></th>
+                    <th><p style="font-size: 25px;text-align: center;">Extension<input type="text" name="Extension" size="15" maxlength="30"/></p></th>
+                </tr>
+                <tr>
+                <th style="text-align: start;"><label for="date" style="font-size: 25px;">Date of Appointment</label>
+                <input type="date" name="depart" id="date" required="required"/></th>
+                <th>  <label for="appt"style="font-size: 25px;">Time</label>
+                    <input type="time" id="appt" name="appt"required="required"/></th>
+                </tr>
+                <tr>
+                    <th><h3 style="font-size: 25px;text-align: start;">Message</h3>
+                        <textarea name="comments"
+                        cols="60" rows="5"required="required">
+                        </textarea>
+                    </th>
+                </tr>
+            </table>
+            <button id="js">Submit</button>
+        </form>
+        <script>
+            document.getElementById("js").addEventListener("click",function(){
+                alert("Your Appointment Confirmed");});
+            
+        </script>
+    </body>
+</html>
